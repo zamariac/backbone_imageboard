@@ -20,7 +20,19 @@ $(document).ready(function(){
 
 	});
 
+	var imageTemplate = _.template($('#list-template').html());
+	
+	$('#image').click(function(e){
+		e.preventDefault();
+		
+	
 
+		var newDisplay = new Image({
+			url:$('input').val(),
+			caption:$('textarea').val()
+		})
+
+	})
 
 
 
