@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	// var todoList = new imageCollection();
-	// todoList.fetch();
 
 	$('#dropdown').hide();
 
@@ -20,7 +18,8 @@ $(document).ready(function(){
 
 	});
 	var imageList = new ImageCollection();
-
+		imageList.fetch();
+		
 	var imageTemplate = _.template($('#list-template').html());
 	
 	$('#image').click(function(e){
@@ -51,7 +50,7 @@ $(document).ready(function(){
 			var imageHtml = imageTemplate(model.attributes);
 			console.log(imageHtml);
 
-			$('#list-template').append(imageHtml);
+			$('#imagePlace').append(imageHtml);
 		})
 
 

@@ -11,5 +11,12 @@ var image = Backbone.Model.extend({
 			}
 			return false;
 	},
-	
+
+
+	urlRoot: "http://tiy-fee-rest.herokuapp.com/collections/zamariac"
+	// idAttribute : "_id"
+
 });
+
+
+// validatejs
